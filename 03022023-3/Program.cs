@@ -15,7 +15,7 @@ void PrintArray(int[,] arrayArithMean)
 {for(int i=0; i < arrayArithMean.GetLength(0); i++)
     {for (int j=0; j < arrayArithMean.GetLength(1); j++)
         {
-           Console.Write($"{arrayArithMean[i, j]}  ");
+           Console.Write($"{arrayArithMean[i, j]} \t ");
         }
       Console.WriteLine();
     }
@@ -38,7 +38,7 @@ void ColumnsArray(int[,] arrayArithMean)
         }
         sum = sum / arrayArithMean.GetLength(0);
 
-        Console.WriteLine($"Среднее арифметическое столбца {i + 1} массива равно {sum.ToString("0.00")}");
+        Console.WriteLine($"Среднее арифметическое значение столбца {i + 1} массива равно {sum.ToString("0.00")}");
 
     }
 
